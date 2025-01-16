@@ -77,7 +77,7 @@ const Sidenav = () => {
         `}
       >
         <Link
-          to="/reelflix/"
+          to="/"
           className="flex text-4xl text-golden-yellow gap-2 items-center py-2 mt-5"
         >
           <i className="ri-movie-2-ai-fill"></i>

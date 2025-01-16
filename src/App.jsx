@@ -18,7 +18,7 @@ const App = () => {
       <Sidenav />
       <Outlet />
       <Routes>
-        <Route path="/reelflix/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/reelflix/trending" element={<Trending />} />
         <Route path="/reelflix/popular" element={<Popular />} />
         <Route path="/reelflix/movie" element={<Movies />} />
