@@ -29,16 +29,7 @@ const Sidenav = () => {
         icon: "ri-group-2-fill md:text-2xl mr-2",
       },
     ],
-    [
-      {
-        name: "About",
-        icon: "ri-information-2-fill md:text-2xl mr-2",
-      },
-      {
-        name: "Contact Us",
-        icon: "ri-phone-fill md:text-2xl mr-2",
-      },
-    ],
+  
   ];
 
   const toggleSidebar = () => {
@@ -51,7 +42,7 @@ const Sidenav = () => {
       <button
         onClick={toggleSidebar}
         className={`md:hidden fixed top-4 transition-all duration-300 z-[9999] ${
-          isOpen ? "left-[85%]" : "left-2"
+          isOpen ? "left-[75%]" : "left-2"
         } z-50 px-2 py-1 bg-golden-yellow rounded-md`}
       >
         <i className={`ri-${isOpen ? "close" : "menu"}-line text-2xl`}></i>
@@ -108,10 +99,10 @@ const Sidenav = () => {
           </ul>
         </nav>
 
-        <hr className="border-none h-[2px] bg-zinc-500 hidden md:block" />
+        {/* <hr className="border-none h-[2px] bg-zinc-500 hidden md:block" /> */}
 
         {/* Mobile and Desktop Website Information Section */}
-        <nav className="md:mt-10 mt-5">
+        {/* <nav className="md:mt-10 mt-5">
           <h2 className="text-2xl font-semibold hidden md:block">
             Website Information
           </h2>
@@ -134,7 +125,7 @@ const Sidenav = () => {
               </NavLink>
             ))}
           </ul>
-        </nav>
+        </nav> */}
       </div>
 
       {/* Overlay for mobile when sidebar is open */}
